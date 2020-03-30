@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DvD</title>
+    <style>
+        body{
+            background: black;
+        }
+
+        .dvd {
+            height: 250px;
+            width: 130px;
+        }
+
+        .ball {
+
+            margin: -50px auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            -moz-transform: scaleY(0.4);
+            -webkit-transform: scaleY(0.4);
+
+            background: red;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            animation: dvd 5s infinite;
+            animation-duration: 10s;
+            
+        }
+
+        @keyframes dvd {
+            0% {
+                top: -30px;
+                left:-700px;
+            }
+
+            25% {
+                background: green;
+                top: -30px;
+                left: 700px;
+
+            }
+
+            50% {
+                background: blue;
+                top: 650px;
+                left: -700px;
+            }
+
+            75% {
+                background: yellow;
+                top: 650px;
+                left: 670px;
+            }
+
+            100% {
+                top: -30px;
+                left: -700px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <div class="ball">
+            <img class="dvd" src="./assets/dvd-video-logo.png" />
+        </div>
+</body>
+
+</html>
